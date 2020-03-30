@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'Test',
     'Doctor',
     'account'
+    'widget_tweaks'
 ]
 
 MIDDLEWARE = [
