@@ -1,0 +1,61 @@
+#about-description .container {
+    margin-top: 100px;
+    width: 60%;
+    margin-bottom: 70px;
+}
+
+#about-description h4 {
+    padding-top: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+}
+
+#about-description h5 {
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    text-align: right;
+}
+
+#about-description .description {
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    margin-top: 30px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.description br {
+    font-size: 30px;
+}
+
+
+#about-title .container-fluid{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #F96556;
+}
+
+#about-title .container-fluid:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform-origin: top right;
+    transform: skewY(-3deg);
+}
+
+#about-title h1 {
+    padding-top: 30px;
+    font-family: "Fredoka One", cursive;
+    color: white;
+}

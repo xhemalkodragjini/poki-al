@@ -1,0 +1,102 @@
+#forum-detail-section {
+    margin-top: 100px;
+}
+
+#forum-detail-section .discussion-detail {
+    background-color: #DCDCDC;
+    padding: 20px;
+}
+
+#forum-detail-section .discussion-detail h1 {
+    font-family: "Comfortaa", cursive;
+    font-size: 15px;
+    text-align: justify;
+    color: #18445D;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+#forum-detail-section .discussion-detail h2 {
+    font-family: "Comfortaa", cursive;
+    font-size: 15px;
+    text-align: justify;
+    color: #18445D;
+    padding-bottom: 10px;
+}
+
+
+#forum-detail-section .comments-all h1 {
+    padding-top: 30px;
+    font-size: 23px;
+    font-family: "Fredoka One", cursive;
+    color: #408AB4;
+    padding-bottom: 30px;
+}
+
+#forum-detail-section .comment-detail {
+    border-left: 10px solid #DCDCDC;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+#forum-detail-section .comment-detail h1 {
+    padding-top: 0px;
+    font-family: "Comfortaa", cursive;
+    font-size: 15px;
+    text-align: justify;
+    color: #F96556;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+#forum-detail-section .comments-all .form-control {
+    border: 5px solid rgba(196, 196, 196, 0.7);
+    border-radius: 0px;
+    width: 100%;
+}
+
+#forum-detail-section .comments-all .btn {
+    background-color: #F96556;
+    color: white;
+}
+
+#forum-detail-section .comment-detail h2 {
+    font-family: "Comfortaa", cursive;
+    font-size: 15px;
+    text-align: justify;
+    color: #18445D;
+    padding-bottom: 10px;
+}
+
+#forum-detail-section .latest-discussions {
+    padding: 20px;
+}
+
+
+#forum-detail-section .latest-discussions h1 {
+    font-size: 23px;
+    font-family: "Fredoka One", cursive;
+    color: #408AB4;
+    padding-bottom: 30px;
+}
+
+#forum-detail-section .latest-discussions .post-detail-card {
+    background-color: #DCDCDC;
+    padding: 20px;
+}
+
+#forum-detail-section .post-detail-card h2{
+    font-family: "Comfortaa", cursive;
+    font-size: 15px;
+    text-align: justify;
+    color: #18445D;
+    padding-bottom: 10px;
+}
+
+#forum-detail-section .post-detail-card a{
+    margin-left: auto;
+    font-family: "Fredoka One", cursive;
+    font-size: 15px;
+    padding-bottom: 20px;
+    color: #E25A53;
+}

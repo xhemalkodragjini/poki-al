@@ -1,0 +1,31 @@
+
+#login .col-md-6 .btn {
+    background-color: #F96556;
+    color: white;
+}
+
+#login .container .btn {
+    margin-bottom: 30px;
+    background-color: #408AB4;
+    color: white;
+}
+
+
+#login .container-fluid {
+    background: #F96556;
+}
+
+
+#login h1 {
+    padding-top: 30px;
+    font-family: "Fredoka One", cursive;
+    color: #F96556;
+}
+
+
+#login .col-md-6 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}

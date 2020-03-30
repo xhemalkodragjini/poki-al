@@ -1,0 +1,49 @@
+
+#forum-add-discussion {
+    margin: auto;
+}
+
+#forum-add-discussion .create {
+    margin-top: 100px;
+    font-size: 23px;
+    font-family: "Fredoka One", cursive;
+    color: #408AB4;
+    padding-bottom: 30px;
+}
+
+#forum-add-discussion .form-control {
+    padding: 20px;
+    background: #FFFFFF;
+    border: 7px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+
+#forum-add-discussion .form-group label{
+    font-family: "Comfortaa", cursive;
+    font-weight: bold;
+    color: #408AB4;
+}
+
+
+#forum-add-discussion .form-group h1{
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Comfortaa", cursive;
+    color: #408AB4;
+}
+
+
+
+#forum-add-discussion .btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #E25A53;
+    border-radius: 15px;
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    color: #FFFFFF;
+}

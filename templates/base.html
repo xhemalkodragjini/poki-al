@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Autistic</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Fredoka+One|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <link rel="stylesheet" href="{% static 'about.css' %}">
+    <link rel="stylesheet" href="{% static 'login_p.css' %}">
+    <link rel="stylesheet" href="{% static 'signup.css' %}">
+    <link rel="stylesheet" href="{% static 'forum_intro.css' %}">
+    <link rel="stylesheet" href="{% static 'test.css' %}">
+    <script src="https://kit.fontawesome.com/141a3ebb36.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="{% url 'home' %}"><span class="logo-auti">Auti</span><span
+            class="logo-s">s</span><span
+            class="logo-tic">tic</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'home' %}">Hyrje <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">Rreth Autistic</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'test' %}">Testi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'list' %}">Autistic Forum</a>
+            </li>
+            <li class="nav-item">
+                {% if user.is_authenticated %}
+                    <a class="nav-link" href="{% url 'logout' %}">
+                        <button class="btn login-btn">Dil</button>
+                    </a>
+                {% else %}
+                    <a class="nav-link" href="{% url 'login' %}">
+                        <button class="btn login-btn">Hyr</button>
+                    </a>
+                {% endif %}
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'register' %}">
+                    <button class="btn register-btn">Regjistrohu</button>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+{% block content %}
+{% endblock %}
+
+<section id="footer">
+    <div class="container">
+        <a class="navbar-brand" href="#"><span class="logo-auti">Auti</span><span class="logo-s">s</span><span
+                class="logo-tic">tic</span></a>
+
+        <div class="row">
+            <div class="col-md-4">
+                <a href="{% url 'home' %}"><h4>Hyrje</h4></a>
+                <a href="{% url 'about' %}"><h4>Rreth Autistic</h4></a>
+                <a href="{% url 'test' %}"><h4>Testi</h4></a>
+                <a href="{% url 'list' %}"><h4>Autistic Forum</h4></a>
+            </div>
+            <div class="col-md-4 text-center mt-5">
+                <h4 class="developer">Developed by: Xhemal Kodragjini</h4>
+                <h4>xhemal.kodragjini@cit.edu.al</h4>
+            </div>
+            <div class="col-md-4 m-auto text-center">
+                <i class="fab fa-facebook"></i>
+                <i class="fas fa-envelope-square"></i>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+

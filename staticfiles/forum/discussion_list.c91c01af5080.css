@@ -1,0 +1,98 @@
+
+#forum-intro-title .container-fluid {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #F96556;
+}
+
+#forum-intro-title .container-fluid:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform-origin: top right;
+    transform: skewY(-3deg);
+}
+
+#forum-intro-title h1 {
+    padding-top: 30px;
+    font-family: "Fredoka One", cursive;
+    color: white;
+}
+
+#forum-intro-discussions {
+    margin-top: 100px;
+}
+
+#forum-intro-discussions .container-fluid h1 {
+    font-size: 23px;
+    font-family: "Fredoka One", cursive;
+    color: #408AB4;
+    padding-bottom: 30px;
+}
+
+#forum-intro-discussions .container {
+    background: #FFFFFF;
+    border: 7px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 51px;
+    width: 70%;
+}
+
+#forum-intro-discussions .discussion-intro {
+    margin-top: 20px;
+    border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+#forum-intro-discussions .row h1 {
+    font-family: "Comfortaa", cursive;
+    font-size: 15px;
+    text-align: justify;
+    color: #18445D;
+    padding-bottom: 10px;
+    font-weight: bold;
+
+}
+
+
+#forum-intro-discussions .row h2 {
+    font-family: "Comfortaa", cursive;
+    font-size: 15px;
+    text-align: justify;
+    color: #18445D;
+    padding-bottom: 10px;
+
+}
+
+#forum-intro-discussions .row a {
+    margin-left: auto;
+    font-family: "Fredoka One", cursive;
+    font-size: 15px;
+    padding-bottom: 20px;
+    color: #E25A53;
+}
+
+
+#form-create-button {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#form-create-button .btn {
+    background: #E25A53;
+    border-radius: 15px;
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    color: #FFFFFF;
+}

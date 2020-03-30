@@ -1,0 +1,254 @@
+/*********Navbar********/
+
+.login-btn {
+    background-color: #F96556;
+    color: white !important;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.register-btn {
+    background-color: #408AB4;
+    color: white !important;
+    border-radius: 10px;
+    font-size: 15px;
+
+}
+
+.nav-link {
+    margin-right: 25px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+    color: #408AB4 !important;
+}
+
+.nav-item {
+    margin: auto;
+}
+
+.navbar-brand {
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
+    padding-left: 15px;
+}
+
+.logo-auti {
+    color: #408AB4;
+}
+
+.logo-s {
+    color: #FDB35D;
+}
+
+.logo-tic {
+    color: #F96556;
+}
+
+
+/*********Intro section********/
+
+
+#intro-section .container-fluid {
+    background-image: linear-gradient(-176deg, #408AB4 70%, #ffffff calc(70% + 2px));
+
+}
+
+#intro-section .col-md-6 {
+    color: white;
+}
+
+#intro-section .container-fluid img {
+    padding: 10%;
+}
+
+#intro-section .container-fluid h1 {
+    font-family: "Fredoka One", cursive;
+    padding-bottom: 30px;
+}
+
+#intro-section .container-fluid h5 {
+    font-family: 'Comfortaa', cursive;
+}
+
+
+.hello-text {
+    margin-top: 100px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .hello-text {
+        color: #408AB4;
+        margin-bottom: 100px;
+    }
+}
+
+
+/*********Welcome section********/
+
+#welcome-message-section .col-md-8 {
+    margin: auto;
+}
+
+#welcome-message-section .col-md-8 h1 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: justify;
+    color: #18445D;
+}
+
+#welcome-message-section .col-md-4 img {
+    width: 70%;
+}
+
+
+/**********Statistics Sections**********/
+
+.info-box {
+    background-color: #fad390;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: auto auto 50px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.info-box h1 {
+    padding-top: 30px;
+    font-family: "Fredoka One", cursive;
+    color: #408ab4;
+    font-size: 50px;
+}
+
+.info-box h2 {
+    font-family: "Comfortaa", cursive;
+    color: #408ab4;
+    font-size: 16px;
+    letter-spacing: 0.09em;
+}
+
+#statistics {
+    margin-top: 100px;
+}
+
+
+/************Test Intro Section***********/
+
+#test-intro-section {
+    margin-top: 50px;
+}
+
+#test-intro-section .container {
+    width: 50%;
+    background: #ECECEC;
+    border-radius: 80px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#test-intro-section h2 {
+    padding-top: 30px;
+    color: #FDB35D;
+    font-family: "Fredoka One", cursive;
+}
+
+#test-intro-section h4 {
+    padding: 5%;
+    font-size: 14px;
+    font-family: Comfortaa, cursive;
+    font-weight: bold;
+    color: #18445D;
+}
+
+#test-intro-section .row {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#test-intro-section .col-md-6 {
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #test-intro-section .container {
+        width: 80%;
+        border-radius: 50px;
+    }
+}
+
+
+/****************Forum Section****************/
+#forum-section {
+    margin-top: 80px;
+    background: #DCDCDC;
+}
+
+#forum-section h1 {
+    padding-top: 30px;
+    color: #408AB4;
+    font-family: "Fredoka One", cursive;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+#forum-section h3 {
+    color: #18445D;
+    font-size: 18px;
+    font-family: "Comfortaa", cursive;
+}
+
+#forum-section .row {
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+#forum-section .btn {
+    padding: 15px 25px 15px 25px;
+    color: #408AB4;
+    font-size: 18px;
+    font-family: "Fredoka One", cursive;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+
+/*************Footer*************/
+#footer {
+    background: #333E44;
+}
+
+#footer .navbar-brand {
+    padding-top: 40px;
+}
+
+#footer .row {
+    border-top: 1px solid #ffffff;
+    padding-bottom: 40px;
+}
+
+#footer h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #bbbbbb;
+    padding-top: 20px;
+}
+
+#footer .developer {
+    font-weight: bold;
+}
+
+#footer .fab {
+    margin-right: 20px;
+}
+
+#footer .fa-facebook {
+    color: #408AB4;
+    font-size: 40px;
+}
+
+#footer .fa-envelope-square {
+    color: #F96556;
+    font-size: 40px;
+}
+
