@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'Forum',
     'Test',
     'Doctor',
-    'account'
+    'account',
     'widget_tweaks'
 ]
 
