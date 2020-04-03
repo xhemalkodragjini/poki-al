@@ -8,107 +8,81 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 text-center">
-                    <img src="{% static 'logo.png' %}" alt="logo">
-                </div>
-                <div class="col-md-6 text-center">
                     <div class="hello-text">
-                        <h1>Çkemi!</h1>
-                        <h5>Unë jam Poki, shoku më i ri i fëmijës suaj!</h5>
+                        <h1>Miresevjen!</h1>
+                        <h5>Une jam Poki, shoku me i ri i femijes suaj dhe do te jem krahu juaj i djathte ne cdo
+                            problem!
+                        </h5>
                     </div>
                 </div>
+                <div class="col-md-6 text-center">
+                    <img src="{% static 'poki-homepagee.png' %}" alt="logo">
+                </div>
             </div>
         </div>
+        </div>
     </section>
-
-    <section id="welcome-message-section">
+    <section id="welcome-login-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <h1>Miresevjen!<br><br>
-
-                        Lorem ipsum hello world is interesting lorem lorem ipsum hello world Lorem ipsum hello world is
-                        interesting lorem lorem ipsum hello worldLorem ipsum hello world is interesting lorem lorem
-                        ipsum
-                        hello
-                        worldLorem ipsum hello world is interesting lorem lorem ipsum hello worldLorem ipsum hello world
-                        is
-                        interesting lorem lorem ipsum hello worldLorem ipsum hello world is interesting lorem lorem
-                        ipsum
-                        hello
-                        world</h1>
+                <div class="col-md-5">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-9"><h1>Krijo nje llogari per te aksesuar te gjitha sherbimet e
+                                platformes.</h1>
+                            </div>
+                            <div class="col-3"><a href="{% url 'register' %}">
+                                <button class="btn">+</button>
+                            </a></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <img src="{% static 'welcome.PNG' %}" alt="hello">
-                </div>
+                <div class="col-md-7"></div>
             </div>
-        </div>
-    </section>
 
+    </section>
 
     <section id="statistics">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 text-center">
                     <div class="info-box">
-                        <h1>96%</h1>
-                        <h2>Niveli i parashikimeve te sakta</h2>
+                        <img src="../static/icon1.png">
+                        <h2>Poki Test</h2>
+                        <h3>Kryeni testin AQ-10, i krijuar nga ____ dhe perdorur nga mjeket diagnostikues ne te gjithe
+                            boten. Pasi kryeni testin, mund te njiheni me parashikimin nese femija juaj eshte i prekur
+                            nga spektri i Autizmit.</h3>
+                        <a href="{% url 'test' %}">
+                            <button class="btn test-btn">Kryej testin</button>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="info-box">
-                        <h1>100+</h1>
-                        <h2>Prinder te kenaqur nga sherbimi i ofruar</h2>
+                        <img src="../static/icon2.png">
+                        <h2>Poki Forum</h2>
+                        <h3>Behuni pjese e forumit per te diskutuar me prinder te tjere rreth ceshtjeve qe lidhen me
+                            femijen tuaj. Gjeni zgjidhje per problemet duke perfituar nga eksperienca dhe keshillat e
+                            prinderve te tjere.</h3>
+                        <a href="{% url 'list' %}">
+                            <button class="btn forum-btn">Hyr ne forum</button>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="info-box">
-                        <h1>20+</h1>
-                        <h2>Pergjigje mesatarisht ne forum</h2>
+                        <img src="../static/icon3.png">
+                        <h2>Poki Doktor</h2>
+                        <h3>Njihuni me mjeket specialiste ne qytetin tuaj. Kontaktojini ata nepermjet formave qe kane
+                            vene ne dispozicion dhe konsultohuni mbi shqetesimet e femijes suaj.</h3>
+                        <a href="{% url 'test' %}">
+                            <button class="btn doctor-btn">Njihu me mjeket</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="test-intro-section">
-        <div class="container text-center">
-            <h2>Gati per testin?</h2>
-            <h4>Per te aksesuar testin, duhet qe ju te krijoni nje llogari. Kjo ju ndihmon per te ruajtur rezultatin dhe
-                aktivitetet e tjera ne faqe.</h4>
-            <div class="row">
-
-                <div class="col-md-6 text-center">
-                    <a class="nav-link" href="{% url 'login' %}">
-                        <button class="btn login-btn">Hyr</button>
-                    </a>
-                </div>
-                <div class="col-md-6 text-center">
-                    <a class="nav-link" href="{% url 'register' %}">
-                        <button class="btn register-btn">Regjistrohu</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="forum-section">
-        <div class="container-fluid text-center">
-            <h1>FORUM</h1>
-            <div class="row">
-                <div class="col-md-9">
-                    <h3>Behu pjese e forumit te diskutimit, per te njohur prinder te tjere dhe ndare eksperiencat me
-                        njeri
-                        tjetrin.</h3>
-                </div>
-                <div class="col-md-3">
-                    <a href="{% url 'list' %}">
-                        <button class="btn btn-light">Hyr ne forum</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </section>
 {% endblock %}
 

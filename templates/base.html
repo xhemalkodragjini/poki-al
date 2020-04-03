@@ -3,11 +3,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Autistic</title>
+    <title>Poki</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Fredoka+One|Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Fredoka+One|Open+Sans|Quicksand&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'base.css' %}">
     <link rel="stylesheet" href="{% static 'about.css' %}">
     <link rel="stylesheet" href="{% static 'login_p.css' %}">
     <link rel="stylesheet" href="{% static 'signup.css' %}">
@@ -15,9 +16,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <a class="navbar-brand" href="{% url 'home' %}"><span class="logo-auti">Auti</span><span
-            class="logo-s">s</span><span
-            class="logo-tic">tic</span></a>
+    <a class="navbar-brand" href="{% url 'home' %}"><img src="../static/Poki%20logo.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,13 +28,16 @@
                 <a class="nav-link" href="{% url 'home' %}">Hyrje <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'about' %}">Rreth Autistic</a>
+                <a class="nav-link" href="{% url 'about' %}">Rreth Poki</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'test' %}">Testi</a>
+                <a class="nav-link" href="{% url 'test' %}">Poki Test</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'list' %}">Autistic Forum</a>
+                <a class="nav-link" href="{% url 'list' %}">Poki Forum</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Poki Doktor</a>
             </li>
             <li class="nav-item">
                 {% if user.is_authenticated %}
@@ -48,11 +50,6 @@
                     </a>
                 {% endif %}
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'register' %}">
-                    <button class="btn register-btn">Regjistrohu</button>
-                </a>
-            </li>
         </ul>
     </div>
 </nav>
@@ -63,15 +60,16 @@
 
 <section id="footer">
     <div class="container">
-        <a class="navbar-brand" href="#"><span class="logo-auti">Auti</span><span class="logo-s">s</span><span
-                class="logo-tic">tic</span></a>
+        <a class="navbar-brand" href="{% url 'home' %}"><img src="../static/Poki%20logo.png"></a>
 
         <div class="row">
             <div class="col-md-4">
                 <a href="{% url 'home' %}"><h4>Hyrje</h4></a>
-                <a href="{% url 'about' %}"><h4>Rreth Autistic</h4></a>
-                <a href="{% url 'test' %}"><h4>Testi</h4></a>
-                <a href="{% url 'list' %}"><h4>Autistic Forum</h4></a>
+                <a href="{% url 'about' %}"><h4>Rreth Poki</h4></a>
+                <a href="{% url 'test' %}"><h4>Poki Test</h4></a>
+                <a href="{% url 'list' %}"><h4>Poki Forum</h4></a>
+                <a href="#"><h4>Poki Doktor</h4></a>
+
             </div>
             <div class="col-md-4 text-center mt-5">
                 <h4 class="developer">Developed by: Xhemal Kodragjini</h4>
