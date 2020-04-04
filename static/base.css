@@ -93,11 +93,11 @@
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-#welcome-login-section .col-9{
+#welcome-login-section .col-10{
     margin: auto;
 }
 
-#welcome-login-section .col-3{
+#welcome-login-section .col-2{
     margin: auto;
 }
 #welcome-login-section h1{
@@ -105,15 +105,11 @@
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     color: #434957;
-    padding: 15px;
+    padding: 15px 0px;
 }
 
-#welcome-login-section button{
-    background-color: #5EB1D3;
-    border-radius: 100%;
-    color: white;
-    font-family: 'Comfortaa', cursive;
-    font-size: 30px;
+#welcome-login-section img{
+    width: 50px;
 }
 
 
