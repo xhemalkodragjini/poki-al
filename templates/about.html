@@ -1,11 +1,23 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <section id="about-title">
-        <div class="container-fluid text-center">
-            <h1>Rreth Autistic</h1>
+    <section id="about-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div class="page-title">
+                        <h1>Rreth Poki</h1>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{% static 'poki-about.png' %}" alt="logo">
+                </div>
+            </div>
+        </div>
         </div>
     </section>
+
+
     <section id="about-description">
         <div class="container">
             <h4>Hi!</h4>
@@ -30,8 +42,8 @@
                 Various versions have evolved over the years, sometimes by
                 accident, sometimes on purpose (injected humour and the like).
             </p>
-            <h5>Xhemal Kodragjini</h5>
-            <h5>Ideator & Developer</h5>
+            <h3>Xhemal Kodragjini</h3>
+            <h5 style="font-style: italic">Ideator & Developer</h5>
             <h5>Poki.al</h5>
         </div>
     </section>

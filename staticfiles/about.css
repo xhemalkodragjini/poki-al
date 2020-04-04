@@ -1,61 +1,86 @@
-#about-description .container {
-    margin-top: 100px;
-    width: 60%;
-    margin-bottom: 70px;
+
+#about-section .container-fluid {
+    background-color: #79CEED;
+    padding-bottom: 100px;
 }
 
-#about-description h4 {
-    padding-top: 40px;
-    font-family: "Open Sans", sans-serif;
-    font-style: italic;
+#about-section .col-md-6 {
+    color: #FEFEFE;
+    margin: auto;
 }
 
-#about-description h5 {
-    font-weight: bold;
-    font-size: 15px;
-    padding-top: 10px;
-    font-family: "Open Sans", sans-serif;
-    font-style: italic;
-    text-align: right;
+#about-section .container-fluid img {
+    padding: 20px;
 }
 
-#about-description .description {
-    font-family: "Open Sans", sans-serif;
-    font-style: italic;
-    margin-top: 30px;
-    text-align: justify;
-    margin-bottom: 50px;
-}
-
-.description br {
-    font-size: 30px;
-}
-
-
-#about-title .container-fluid{
-    position: relative;
-    width: 100%;
-    height: 100px;
-    background: #F96556;
-}
-
-#about-title .container-fluid:after{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: '';
-    background: inherit;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    transform-origin: top right;
-    transform: skewY(-3deg);
-}
-
-#about-title h1 {
-    padding-top: 30px;
+#about-section .container-fluid h1 {
     font-family: "Fredoka One", cursive;
-    color: white;
+    padding-bottom: 30px;
+}
+
+
+
+.page-title {
+    margin-top: 20%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .page-title {
+    }
+
+    #about-section .container-fluid img {
+        padding: 0%;
+    }
+
+}
+
+
+
+#about-description {
+    width: 60%;
+    margin: auto auto 100px auto;
+}
+
+
+#about-description .container{
+    background: #FFFFFF;
+    box-shadow: 0 10px 20px rgba(98, 98, 98, 0.19), 0 6px 6px rgba(240, 230, 230, 0.23);
+    border-radius: 13px;
+    margin-top: -80px;
+    padding: 40px;
+}
+
+#about-description h3, h4, .description, h5 {
+    font-family: "Quicksand", sans-serif;
+    color: #434957;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: justify;
+}
+
+#about-description h4{
+    padding-bottom: 20px;
+}
+
+#about-description h3{
+    padding-top: 30px;
+    font-size: 18px;
+    text-align: right;
+    font-weight: bolder;
+}
+
+#about-description h5{
+    font-size: 15px;
+    text-align: right;
+    font-weight: normal;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    #about-description {
+        width: 80%;
+    }
 }
