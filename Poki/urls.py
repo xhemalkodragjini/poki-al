@@ -6,6 +6,6 @@ urlpatterns = [
     path('', include("PokiBase.urls")),
     path('test/', include("Test.urls")),
     path('forum/', include("Forum.urls")),
-    path('registration/', include("account.urls")),
-    path('registration/', include('django.contrib.auth.urls')),
+    path('account/', include('django.contrib.auth.urls')),
+    path('account/', include('account.urls')),
 ]

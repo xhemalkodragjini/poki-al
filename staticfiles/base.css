@@ -13,14 +13,16 @@
     color: white !important;
     border-radius: 10px;
     font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
 }
 
 .nav-link {
     margin-right: 25px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bolder;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
     font-size: 17px;
-    color: #408AB4 !important;
+    color: #7f7f7f !important;
 }
 
 .nav-item {

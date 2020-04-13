@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+{% block content %}
+
+    <section id="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-5 col-md-6">
+                    <div class="card card-body shadow">
+                        <h1 class="h5 text-center">Hyr ne llogari</h1>
+                        <form id="login-form" method="post"
+                              action="{% url 'login' %}">
+                            {% csrf_token %}
+                            <table class="table table-borderless">
+                                {% if form.errors %}
+                                    <tr>
+                                        <td><p class="alert alert-danger">
+                                            Te dhenat tuaja nuk jane te sakta.
+                                        </p></td>
+                                    </tr>
+                                {% endif %}
+                                <tr>
+                                    <td><input id="id_username" name="username"
+                                               type="text" class="form-control" placeholder="Emri i perdoruesit"></td>
+                                </tr>
+                                <tr>
+                                    <td><input id="id_password" name="password"
+                                               type="password" class="form-control" placeholder="Fjalekalimi"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-group">
+                                            <div class="text-right text-small mt-2">
+                                                <a href="{% url 'password_reset' %}">Keni harruar fjalekalimin?</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-group">
+                                            <button class="btn btn-block" type="submit">Hyr ne llogari</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <input type="hidden" name="next" value="{{ next }}"/>
+                        </form>
+                    </div>
+                    <div class="text-center text-small mt-3">
+                        Nuk keni nje llogari? <a href="{% url 'signup' %}">Krijoni</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+
+

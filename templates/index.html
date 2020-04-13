@@ -31,7 +31,7 @@
                             <div class="col-9"><h1>Krijo nje llogari per te aksesuar te gjitha sherbimet e
                                 platformes.</h1>
                             </div>
-                            <div class="col-3"><a href="{% url 'register' %}">
+                            <div class="col-3"><a href="{% url 'signup' %}">
                                 <img src="../static/plus.png">
                             </a></div>
                         </div>
@@ -46,38 +46,32 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <div class="info-box">
+                    <div class="card card-body shadow info-box">
                         <img src="../static/icon1.png">
                         <h2>Poki Test</h2>
                         <h3>Kryeni testin AQ-10, i krijuar nga ____ dhe perdorur nga mjeket diagnostikues ne te gjithe
                             boten. Pasi kryeni testin, mund te njiheni me parashikimin nese femija juaj eshte i prekur
                             nga spektri i Autizmit.</h3>
-                        <a href="{% url 'test' %}">
-                            <button class="btn test-btn">Kryej testin</button>
-                        </a>
+                            <button class="btn btn-block test-btn" href="{% url 'test' %}">Kryej testin</button>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
-                    <div class="info-box">
+                    <div class="card card-body shadow info-box">
                         <img src="../static/icon2.png">
                         <h2>Poki Forum</h2>
                         <h3>Behuni pjese e forumit per te diskutuar me prinder te tjere rreth ceshtjeve qe lidhen me
                             femijen tuaj. Gjeni zgjidhje per problemet duke perfituar nga eksperienca dhe keshillat e
                             prinderve te tjere.</h3>
-                        <a href="{% url 'list' %}">
-                            <button class="btn forum-btn">Hyr ne forum</button>
-                        </a>
+                            <button class="btn btn-block forum-btn" href="{% url 'list' %}">Hyr ne forum</button>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
-                    <div class="info-box">
+                    <div class="card card-body shadow info-box">
                         <img src="../static/icon3.png">
                         <h2>Poki Doktor</h2>
                         <h3>Njihuni me mjeket specialiste ne qytetin tuaj. Kontaktojini ata nepermjet formave qe kane
                             vene ne dispozicion dhe konsultohuni mbi shqetesimet e femijes suaj.</h3>
-                        <a href="{% url 'test' %}">
-                            <button class="btn doctor-btn">Njihu me mjeket</button>
-                        </a>
+                            <button class="btn btn-block doctor-btn" href="{% url 'test' %}">Njihu me mjeket</button>
                     </div>
                 </div>
             </div>
