@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section id="result-positive-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img class="poki-logo-result" src="{% static 'positive.png' %}" alt="logo">
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="result-card">
+                        <img src="{% static 'positive-icon.png' %}" alt="logo">
+                        <h1>Rezultati</h1>
+                        <h2>Urime! Rezultatet <span>nuk</span> parashikojne shenja te spektrit te Autizmit.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

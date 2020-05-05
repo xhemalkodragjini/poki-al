@@ -1,49 +1,49 @@
-
-#forum-add-discussion {
-    margin: auto;
+#discussion-new {
+    padding: 100px 5px;
+    background: #E0E1E1;
 }
 
-#forum-add-discussion .create {
-    margin-top: 100px;
-    font-size: 23px;
-    font-family: "Fredoka One", cursive;
-    color: #408AB4;
-    padding-bottom: 30px;
+#discussion-new form {
+    margin: 20px auto;
 }
 
-#forum-add-discussion .form-control {
-    padding: 20px;
-    background: #FFFFFF;
-    border: 7px solid rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+.discussion-new h1 {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 30px;
+    line-height: 24px;
+    color: #434957;
+    padding-bottom: 40px;
 }
 
-
-#forum-add-discussion .form-group label{
-    font-family: "Comfortaa", cursive;
-    font-weight: bold;
-    color: #408AB4;
-}
-
-
-#forum-add-discussion .form-group h1{
-    padding-top: 30px;
+#discussion-new label {
+    font-family: 'Fredoka One', sans-serif;
     font-size: 18px;
-    font-weight: bold;
-    font-family: "Comfortaa", cursive;
-    color: #408AB4;
+    color: #434957;
+    padding-top: 20px;
+
 }
 
+.discussion-new .form-control {
+    background: #F9F7F1;
+    border-radius: 10px;
+}
 
-
-#forum-add-discussion .btn {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background: #E25A53;
-    border-radius: 15px;
-    font-family: "Comfortaa", cursive;
-    font-size: 18px;
+.discussion-new-form .btn {
+    margin-top: 30px;
+    background: #408AB4;
+    border-radius: 13px;
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
     color: #FFFFFF;
+    padding: 12px 40px;
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    .discussion-new-form {
+        margin: auto;
+        width: 50%;
+    }
 }

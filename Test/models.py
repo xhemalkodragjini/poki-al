@@ -11,25 +11,24 @@ question_choices2 = (
 )
 
 gender_choices = (
-    ("", ""),
     ("1", "Mashkull"),
     ("0", "Femer")
 )
 
 
 class TestModel(models.Model):
-    a1 = models.CharField(max_length=128, choices=question_choices)
-    a2 = models.CharField(max_length=128, choices=question_choices)
-    a3 = models.CharField(max_length=128, choices=question_choices)
-    a4 = models.CharField(max_length=128, choices=question_choices)
-    a5 = models.CharField(max_length=128, choices=question_choices)
-    a6 = models.CharField(max_length=128, choices=question_choices)
-    a7 = models.CharField(max_length=128, choices=question_choices)
-    a8 = models.CharField(max_length=128, choices=question_choices)
-    a9 = models.CharField(max_length=128, choices=question_choices)
-    a10 = models.CharField(max_length=128, choices=question_choices)
-    gjinia = models.CharField(max_length=128, choices=gender_choices, default="")
-    mosha_ne_muaj = models.IntegerField()
+    a1 = models.CharField(max_length=128, choices=question_choices, blank=False, default= None)
+    a2 = models.CharField(max_length=128, choices=question_choices, blank=False, default= None)
+    a3 = models.CharField(max_length=128, choices=question_choices, blank=False, default= None)
+    a4 = models.CharField(max_length=128, choices=question_choices, blank=False, default= None)
+    a5 = models.CharField(max_length=128, choices=question_choices, blank=False, default= None)
+    a6 = models.CharField(max_length=128, choices=question_choices, blank=False, default= None)
+    a7 = models.CharField(max_length=128, choices=question_choices, blank=False, default= None)
+    a8 = models.CharField(max_length=128, choices=question_choices, blank=False, default= None)
+    a9 = models.CharField(max_length=128, choices=question_choices, blank=False, default= None)
+    a10 = models.CharField(max_length=128, choices=question_choices, blank=False, default= None)
+    gjinia = models.CharField(max_length=128, choices=gender_choices, blank=False, default=None)
+    mosha_ne_muaj = models.CharField(max_length=3, blank=False, default=None)
     etnia = models.IntegerField(default=5)
-    verdheza = models.CharField(max_length=128, choices=question_choices2)
-    family = models.CharField(max_length=128, choices=question_choices2)
+    verdheza = models.CharField(max_length=128, choices=question_choices2, blank=False, default= None)
+    family = models.CharField(max_length=128, choices=question_choices2, blank=False, default= None)

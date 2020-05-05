@@ -52,7 +52,9 @@
                         <h3>Kryeni testin AQ-10, i krijuar nga ____ dhe perdorur nga mjeket diagnostikues ne te gjithe
                             boten. Pasi kryeni testin, mund te njiheni me parashikimin nese femija juaj eshte i prekur
                             nga spektri i Autizmit.</h3>
-                            <button class="btn btn-block test-btn" href="{% url 'test' %}">Kryej testin</button>
+                        <a href="{% url 'test' %}">
+                            <button class="btn btn-block test-btn">Kryej testi</button>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
@@ -62,7 +64,9 @@
                         <h3>Behuni pjese e forumit per te diskutuar me prinder te tjere rreth ceshtjeve qe lidhen me
                             femijen tuaj. Gjeni zgjidhje per problemet duke perfituar nga eksperienca dhe keshillat e
                             prinderve te tjere.</h3>
-                            <button class="btn btn-block forum-btn" href="{% url 'list' %}">Hyr ne forum</button>
+                        <a href="{% url 'list' %}">
+                            <button class="btn btn-block forum-btn">Hyr ne forum</button>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
@@ -71,7 +75,9 @@
                         <h2>Poki Doktor</h2>
                         <h3>Njihuni me mjeket specialiste ne qytetin tuaj. Kontaktojini ata nepermjet formave qe kane
                             vene ne dispozicion dhe konsultohuni mbi shqetesimet e femijes suaj.</h3>
-                            <button class="btn btn-block doctor-btn" href="{% url 'test' %}">Njihu me mjeket</button>
+                        <a href="{% url 'test' %}">
+                            <button class="btn btn-block doctor-btn">Njihu me mjeket</button>
+                        </a>
                     </div>
                 </div>
             </div>

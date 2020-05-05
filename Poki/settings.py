@@ -42,9 +42,8 @@ INSTALLED_APPS = [
     'Doctor',
     'widget_tweaks',
     'account',
-    'crispy_forms'
+    'crispy_forms',
 ]
-
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',

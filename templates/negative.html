@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section id="result-negative-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img class="poki-logo-result" src="{% static 'negative.png' %}" alt="logo">
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="result-card">
+                        <img src="{% static 'negative-icon.png' %}" alt="logo">
+                        <h1>Rezultati</h1>
+                        <h2>Pergjigjet e testit parashikojne shenja te spektrit te Autizmit. Ju sugjerojme te konsultoheni me nje mjek specialist per nje diagnostikim me te detajuar.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

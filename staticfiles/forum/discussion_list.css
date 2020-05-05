@@ -1,98 +1,59 @@
-
-#forum-intro-title .container-fluid {
-    position: relative;
-    width: 100%;
-    height: 100px;
-    background: #F96556;
+#discussion-list {
+    background: #E0E1E1;
+    padding: 30px 0px;
 }
 
-#forum-intro-title .container-fluid:after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: '';
-    background: inherit;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    transform-origin: top right;
-    transform: skewY(-3deg);
+#discussion-list a {
+    text-decoration: none;
 }
 
-#forum-intro-title h1 {
-    padding-top: 30px;
-    font-family: "Fredoka One", cursive;
+.discussion-list h1 {
+    padding-top: 60px;
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 40px;
+    line-height: 36px;
+    color: #434957;
+}
+
+.discussion-list .btn {
+    margin: 60px auto;
+    background: #408AB4;
+    padding: 10px 50px;
+    border-radius: 0px;
     color: white;
+    font-family: 'Fredoka One', sans-serif;
 }
 
-#forum-intro-discussions {
-    margin-top: 100px;
+.discussion-list-object-single {
+    background: rgba(249, 247, 241, 0.83);
+    border-radius: 9px;
+    margin: 20px auto;
 }
 
-#forum-intro-discussions .container-fluid h1 {
-    font-size: 23px;
-    font-family: "Fredoka One", cursive;
-    color: #408AB4;
-    padding-bottom: 30px;
+.discussion-list-object-single:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#forum-intro-discussions .container {
-    background: #FFFFFF;
-    border: 7px solid rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 51px;
-    width: 70%;
-}
-
-#forum-intro-discussions .discussion-intro {
-    margin-top: 20px;
-    border-bottom: 7px solid rgba(0, 0, 0, 0.2);
-
-}
-
-
-
-#forum-intro-discussions .row h1 {
-    font-family: "Comfortaa", cursive;
-    font-size: 15px;
-    text-align: justify;
-    color: #18445D;
-    padding-bottom: 10px;
+.discussion-list-object-single h2 {
+    margin: 20px auto;
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-
-}
-
-
-#forum-intro-discussions .row h2 {
-    font-family: "Comfortaa", cursive;
-    font-size: 15px;
-    text-align: justify;
-    color: #18445D;
-    padding-bottom: 10px;
-
-}
-
-#forum-intro-discussions .row a {
-    margin-left: auto;
-    font-family: "Fredoka One", cursive;
-    font-size: 15px;
-    padding-bottom: 20px;
-    color: #E25A53;
-}
-
-
-#form-create-button {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-#form-create-button .btn {
-    background: #E25A53;
-    border-radius: 15px;
-    font-family: "Comfortaa", cursive;
     font-size: 18px;
-    color: #FFFFFF;
+    line-height: 16px;
+    color: #434957;
+}
+
+.discussion-list-object-single h3 {
+    font-family: 'Fredoka One', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 16px;
+    color: #434957;
+}
+
+@media only screen and (min-width: 768px) {
+    .discussion-list-object-single {
+        width: 70%;
+    }
 }

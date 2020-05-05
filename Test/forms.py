@@ -24,7 +24,7 @@ class TestForm(forms.ModelForm):
             'a4': "Mund t'i rikthehet aktivitetit qe po kryente edhe nese ka nje nderprerje nga dikush apo dicka",
             'a5': 'E ka te lehte te nenkuptoje dicka qe dikush i thote',
             'a6': 'E dallon nese dikush po merzitet nga biseda qe ai/ajo po ben',
-            'a7': 'Kur lexon nje history, e ka te veshtire te kuptoje qellimet e personazheve',
+            'a7': 'Kur lexon nje histori, e ka te veshtire te kuptoje qellimet e personazheve',
             'a8': 'I pelqen te mbledhe informacion per kategorine e dickaje (lloji i makines, lloji i kafshes, bimes, '
                   'etj.',
             'a9': 'E ka te lehte te kuptoje cfare dikush po mendon apo ndjen, nga mimika e tij/saj',
@@ -43,6 +43,7 @@ class TestForm(forms.ModelForm):
             'a8': RadioSelect,
             'a9': RadioSelect,
             'a10': RadioSelect,
+            'mosha_ne_muaj': forms.NumberInput(attrs={'class': 'form-control'}),
             'gjinia': RadioSelect,
             'etnia': forms.HiddenInput(),
             'verdheza': RadioSelect,

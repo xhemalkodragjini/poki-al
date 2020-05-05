@@ -1,102 +1,102 @@
-#forum-detail-section {
+#discussion-detail {
+    background: #E0E1E1;
+    padding: 30px 0px;
+}
+
+.discussion-author {
+    position: absolute;
+    left: -10px;
+    background: #F9F7F1;
+    border-radius: 13px;
+    width: 200px;
+}
+
+.discussion-author h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    padding: 10px;
+    color: #434957;
+}
+
+
+.discussion-detail {
     margin-top: 100px;
 }
 
-#forum-detail-section .discussion-detail {
-    background-color: #DCDCDC;
+.discussion-detail h1 {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 30px;
+    line-height: 24px;
+    color: #434957;
+}
+
+.discussion-detail p {
+    margin: 50px auto;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    color: #434957;
+    text-align: justify;
+    width: 95%;
+}
+
+
+.comments h3 {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: #434957;
+}
+
+.comment-single {
+    background: rgba(249, 247, 241, 0.83);
+    border-radius: 9px;
+    margin: 20px 0px;
     padding: 20px;
 }
 
-#forum-detail-section .discussion-detail h1 {
-    font-family: "Comfortaa", cursive;
-    font-size: 15px;
-    text-align: justify;
-    color: #18445D;
-    padding-bottom: 10px;
+.comment-single h2 {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 17px;
+    line-height: 16px;
+    color: #434957;
+}
+
+.comment-single h3 {
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-}
-
-#forum-detail-section .discussion-detail h2 {
-    font-family: "Comfortaa", cursive;
     font-size: 15px;
-    text-align: justify;
-    color: #18445D;
-    padding-bottom: 10px;
+    line-height: 20px;
+    color: #434957;
+
 }
 
-
-#forum-detail-section .comments-all h1 {
-    padding-top: 30px;
-    font-size: 23px;
-    font-family: "Fredoka One", cursive;
-    color: #408AB4;
-    padding-bottom: 30px;
+.comments-form{
+    width: 50%;
 }
 
-#forum-detail-section .comment-detail {
-    border-left: 10px solid #DCDCDC;
-    padding-left: 10px;
-    margin-bottom: 30px;
-}
-
-#forum-detail-section .comment-detail h1 {
-    padding-top: 0px;
-    font-family: "Comfortaa", cursive;
-    font-size: 15px;
-    text-align: justify;
-    color: #F96556;
-    padding-bottom: 10px;
-    font-weight: bold;
-}
-
-#forum-detail-section .comments-all .form-control {
-    border: 5px solid rgba(196, 196, 196, 0.7);
-    border-radius: 0px;
-    width: 100%;
-}
-
-#forum-detail-section .comments-all .btn {
-    background-color: #F96556;
+.comments-form .btn{
+    margin: 20px auto;
+    background: #434957;
     color: white;
-}
-
-#forum-detail-section .comment-detail h2 {
-    font-family: "Comfortaa", cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
     font-size: 15px;
-    text-align: justify;
-    color: #18445D;
-    padding-bottom: 10px;
 }
 
-#forum-detail-section .latest-discussions {
-    padding: 20px;
-}
+@media only screen and (min-width: 768px) {
+    .comment-single {
+        width: 50%;
+    }
+
+    .discussion-detail p {
+        width: 70%;
+    }
 
 
-#forum-detail-section .latest-discussions h1 {
-    font-size: 23px;
-    font-family: "Fredoka One", cursive;
-    color: #408AB4;
-    padding-bottom: 30px;
-}
-
-#forum-detail-section .latest-discussions .post-detail-card {
-    background-color: #DCDCDC;
-    padding: 20px;
-}
-
-#forum-detail-section .post-detail-card h2{
-    font-family: "Comfortaa", cursive;
-    font-size: 15px;
-    text-align: justify;
-    color: #18445D;
-    padding-bottom: 10px;
-}
-
-#forum-detail-section .post-detail-card a{
-    margin-left: auto;
-    font-family: "Fredoka One", cursive;
-    font-size: 15px;
-    padding-bottom: 20px;
-    color: #E25A53;
+    .comments {
+        margin-left: 20%;
+    }
 }

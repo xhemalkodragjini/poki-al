@@ -3,10 +3,40 @@
 {% load static %}
 
 {% block content %}
+    <section id="discussion-list" class="text-center">
+        <div class="discussion-list container text-center">
+            <h1>Poki Forum</h1>
+            <a href="{% url 'new' %}">
+                <button class="btn">Krijo nje diskutim</button>
+            </a>
+            <div class="discussion-list-objects container ">
+                {% for object in object_list %}
+                    <a href="{% url 'detail' object.pk %}">
+                        <div class="discussion-list-object-single">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="{% static 'discussion img.png' %}">
+                                </div>
+                                <div class="col-9 text-left">
+                                    <h2>{{ object.titulli }}</h2>
+                                    <h3>{{ object.autori }}</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
 
-    {% for object in object_list %}
-        {{ object.autori }}
-    {% endfor %}
+                {% endfor %}
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
 
 {% endblock %}
 

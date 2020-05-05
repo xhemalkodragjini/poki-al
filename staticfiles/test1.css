@@ -84,6 +84,12 @@ ul {
     margin-bottom: 30px;
 }
 
+
+
+.label #id_a1_0{
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
 
     #no-login-section .container {
@@ -91,4 +97,3 @@ ul {
         border-radius: 50px;
     }
 }
-
