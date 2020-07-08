@@ -2,17 +2,6 @@ from django import forms
 from django.forms import RadioSelect
 from .models import TestModel
 
-question_choices = (
-    ("0", "Po"),
-    ("1", "Jo")
-)
-
-question_choices2 = (
-    ("1", "Po"),
-    ("0", "Jo")
-)
-
-
 class TestForm(forms.ModelForm):
     class Meta:
         model = TestModel
@@ -54,8 +43,8 @@ class TestForm(forms.ModelForm):
         for i in range(10):
             name = "a" + str(i)
             name = self.cleaned_data.get(str(name))
-        gjinia = self.cleaned_data.get('gjinia')
         mosha_ne_muaj = self.cleaned_data.get('mosha ne muaj')
+        gjinia = self.cleaned_data.get('gjinia')
         etnia = self.cleaned_data.get('etnia')
         verdheza = self.cleaned_data.get('verdheza')
         family = self.cleaned_data.get('family')

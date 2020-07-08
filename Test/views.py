@@ -1,5 +1,6 @@
 import pickle
-import pandas
+import pandas as pd
+import numpy as np
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 
@@ -11,16 +12,20 @@ def test_view(request):
     form = TestForm(request.POST or None)
     if form.is_valid():
         form.save()
-        loaded_model = pickle.load(
-            open('C:/Users/Kodragjini/Documents/Poki/Test/finalized_model.sav', 'rb'))
-        qs = TestModel.objects.all().values('a1','a2','a3','a4','a5','a6','a7','a8','a9','a10','gjinia', 'mosha_ne_muaj','etnia', 'verdheza','family')
-        format_data = pandas.DataFrame(qs)
+        loaded_model = pickle.load(open('C:/Users/Kodragjini/Documents/Poki/Test/m.sav', 'rb'))
+        qs = TestModel.objects.all().values('a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7',
+                                            'a8', 'a9', 'a10', 'mosha_ne_muaj','gjinia',
+                                            'etnia', 'verdheza',
+                                            'family')
+        format_data = pd.DataFrame(qs)
         results = loaded_model.predict(format_data)
-        result = results[0]
+        result = results[-1]
         if result == 1:
             return HttpResponseRedirect('neg')
-        else:
+        elif result == 0:
             return HttpResponseRedirect('pos')
+        else:
+            return HttpResponseRedirect('/')
 
     return render(request, 'test.html', {'form': form})
 
