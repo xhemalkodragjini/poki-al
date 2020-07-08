@@ -1,5 +1,6 @@
 import os
 import dj_database_url
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -72,6 +73,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'CONN_MAX_AGE': 500,
     }
 }
 
@@ -128,8 +130,7 @@ STATICFILES_FINDERS = (
 #  Add configuration for static files storage using whitenoise
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-prod_db = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(prod_db)
+DATABASES['default'] = dj_database_url.config(conn_max_age=500, ssl_require=True)
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -140,3 +141,6 @@ EMAIL_HOST_PASSWORD = 'xhemijamie98'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
+
+
+django_heroku.settings(locals())
