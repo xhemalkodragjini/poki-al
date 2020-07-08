@@ -13,7 +13,7 @@ SECRET_KEY = 'lfvgc9q%keoo+__c7z8x7_u8tww&x!)cjbb1k+dd$u)bz^0ihd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['poki-app.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['poki-al.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
