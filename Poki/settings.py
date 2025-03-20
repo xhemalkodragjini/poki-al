@@ -2,6 +2,9 @@ import os
 import dj_database_url
 from django.core.management.utils import get_random_secret_key
 
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -65,17 +68,14 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Poki.wsgi.application'
+# WSGI_APPLICATION = 'Poki.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'CONN_MAX_AGE': 500,
-    }
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'), conn_max_age=500, ssl_require=True)
+
 }
 
 # Password validation
@@ -130,8 +130,6 @@ STATICFILES_FINDERS = (
 
 #  Add configuration for static files storage using whitenoise
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-DATABASES['default'] = dj_database_url.config(conn_max_age=500, ssl_require=True)
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
