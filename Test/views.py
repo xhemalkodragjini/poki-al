@@ -4,6 +4,7 @@ import numpy as np
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 import os
+from django.conf import settings
 
 from .forms import TestForm
 from .models import TestModel
