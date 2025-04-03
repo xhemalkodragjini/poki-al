@@ -1,8 +1,6 @@
 import pickle
-import pandas as pd
-import numpy as np
 from django.http import HttpResponseRedirect
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 import os
 from django.conf import settings
 
@@ -20,7 +18,7 @@ def test_view(request):
                                             'a8', 'a9', 'a10', 'mosha_ne_muaj','gjinia',
                                             'etnia', 'verdheza',
                                             'family')
-        format_data = pd.DataFrame(qs)
+        format_data = [list(item.values()) for item in qs]
         results = loaded_model.predict(format_data)
         result = results[-1]
         if result == 1:
