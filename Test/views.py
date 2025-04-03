@@ -1,25 +1,31 @@
-import pickle
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 import os
 from django.conf import settings
+import onnxruntime as ort
 
 from .forms import TestForm
 from .models import TestModel
 
-model_path = os.path.join(settings.BASE_DIR, "Test", "m.sav")
+model_path = os.path.join(settings.BASE_DIR, "Test", "model.onnx")
 
 def test_view(request):
     form = TestForm(request.POST or None)
     if form.is_valid():
         form.save()
-        loaded_model = pickle.load(open(model_path, 'rb'))
+                
+        # Load the ONNX model
+        session = ort.InferenceSession(model_path)
+
         qs = TestModel.objects.all().values('a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7',
                                             'a8', 'a9', 'a10', 'mosha_ne_muaj','gjinia',
                                             'etnia', 'verdheza',
                                             'family')
         format_data = [list(item.values()) for item in qs]
-        results = loaded_model.predict(format_data)
+        
+        # Run inference
+        results = session.run(None, {'input': format_data})
+
         result = results[-1]
         if result == 1:
             return HttpResponseRedirect('neg')
