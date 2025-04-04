@@ -1,0 +1,15 @@
+{
+    "builds": [
+      {
+        "src": "Poki/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "Poki/wsgi.py"
+      }
+    ]
+  }
+  
