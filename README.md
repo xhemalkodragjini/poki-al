@@ -28,3 +28,26 @@ To run the project locally:
 ```bash
 git clone https://github.com/xhemalkodragjini/poki-al.git
 cd poki-al
+```
+
+### 2. Create a virtual environment and activate it
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run migrations and start the server
+
+```bash
+python manage.py migrate
+python manage.py runserver
+```
+
+### Visit: http://localhost:8000
