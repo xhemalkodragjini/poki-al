@@ -9,8 +9,6 @@
 ## 🧠 Features
 
 - ✅ **ASD Prediction Tool** – Helps parents assess early signs of ASD in children. ML model was trained on data from AQ-10 Test.
-- 📚 **Informative Articles** – Offers accessible information about autism and caregiving strategies.
-- 🧩 **Problem-Solution Database** – A searchable list of common parenting challenges with community-provided solutions.
 - 💬 **Forum** – Connect with other parents and professionals for discussion and mutual support.
 
 ---
@@ -21,7 +19,6 @@
 |------------|-----------------------------|
 | Frontend    | HTML, CSS, JavaScript       |
 | Backend     | Python (Django)             |
-| Database    | SQLite                      |
 | Deployment  | Vercel                      |
 
 ---
