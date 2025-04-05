@@ -19,22 +19,12 @@
 | Backend     | Python (Django)             |
 | Deployment  | Vercel                      |
 
+## 🚀 Getting Started
 
-## 📁 Project Structure
+To run the project locally:
 
-poki-al/ 
-├── Doctor/ # Views and models related to the doctor section 
-├── Forum/ # Community forum features 
-├── Poki/ # Main prediction logic 
-├── PokiBase/ # Core app base models and admin 
-├── Test/ # For testing purposes 
-├── account/ # User authentication and profiles 
-├── poki-app/ # Django app settings and URLs 
-├── static/ # Static assets (CSS, JS) 
-├── staticfiles/ # Collected static files for deployment 
-├── templates/ # HTML templates 
-├── db.sqlite3 # SQLite database 
-├── manage.py # Django entry point 
-├── requirements.txt # Python dependencies 
-├── runtime.txt # Python version for deployment 
-├── vercel.json # Vercel deployment config
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/xhemalkodragjini/poki-al.git
+cd poki-al
